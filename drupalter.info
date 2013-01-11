@@ -1,0 +1,41 @@
+name = Drupalter
+description = Alter Way Drupal distribution.
+version = 0.1
+core = 7.x
+
+; core modules
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+; Base modules
+dependencies[] = ctools
+dependencies[] = libraries
+dependencies[] = diff
+dependencies[] = strongarm
+dependencies[] = features
+dependencies[] = token
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = date
+dependencies[] = date_popup
+dependencies[] = date_api
+dependencies[] = date_tools
+dependencies[] = date_views
+dependencies[] = link
+dependencies[] = jquery_update
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = entitycache
