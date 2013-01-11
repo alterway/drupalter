@@ -9,5 +9,5 @@ projects[] = drupal
 ; ------------------------
 projects[drupalter][type] = profile
 projects[drupalter][download][type] = "git"
-projects[drupalter][download][branch] = "develop"
-projects[drupalter][download][url] = "https://github.com/alterway/drupalter.git"
+projects[drupalter][download][branch] = "master"
+projects[drupalter][download][url] = https://github.com/alterway/drupalter.git

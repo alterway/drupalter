@@ -1,7 +1,3 @@
-// Profile makefile
-// For the moment, we don't reference exact versions. We
-// explicitly want to develop using the modules' latest versions.
-
 name = Drupalter
 description = Alter Way Drupal distribution.
 version = 0.1
