@@ -39,3 +39,9 @@ dependencies[] = jquery_update
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = entitycache
+
+; Features
+dependencies[] = drupalter_core
+dependencies[] = drupalter_page
+dependencies[] = drupalter_wysiwyg
+

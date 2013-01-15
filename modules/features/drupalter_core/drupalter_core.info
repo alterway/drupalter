@@ -1,0 +1,35 @@
+name = Drupalter Core
+description = Misc settings for the Drupalter distribution.
+core = 7.x
+package = Drupalter
+php = 5.2.4
+version = 7.x-1.0-dev
+project = drupalter_core
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = admin_menu_cache_client
+features[variable][] = admin_menu_devel_modules_skip
+features[variable][] = admin_menu_margin_top
+features[variable][] = admin_menu_position_fixed
+features[variable][] = admin_menu_tweak_modules
+features[variable][] = admin_menu_tweak_permissions
+features[variable][] = admin_menu_tweak_tabs
+features[variable][] = date_api_version
+features[variable][] = diff_context_lines_leading
+features[variable][] = diff_context_lines_trailing
+features[variable][] = diff_default_state_node
+features[variable][] = diff_radio_behavior
+features[variable][] = diff_theme
+features[variable][] = entitycache_enabled
+features[variable][] = language_negotiation_language
+features[variable][] = language_negotiation_language_content
+features[variable][] = language_negotiation_language_url
+features[variable][] = language_types
+features[variable][] = menu_expanded
+features[variable][] = path_alias_whitelist
+
+
+

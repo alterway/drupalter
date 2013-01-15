@@ -1,0 +1,29 @@
+name = Drupalter Page
+description = The standart page content
+core = 7.x
+package = Drupalter
+version = 7.x-1.0-dev
+project = drupalter_page
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = node
+dependencies[] = strongarm
+dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[field][] = node-simple_page-body
+features[node][] = simple_page
+features[variable][] = language_content_type_simple_page
+features[variable][] = menu_options_simple_page
+features[variable][] = menu_parent_simple_page
+features[variable][] = node_options_simple_page
+features[variable][] = node_preview_simple_page
+features[variable][] = node_submitted_simple_page
+
+
+; Information added by drush on 2013-01-14
+version = "develop-dev"
+project = "drupalter"
+datestamp = "1358172322"
+
