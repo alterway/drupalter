@@ -8,6 +8,7 @@ project = drupalter_core
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 dependencies[] = strongarm
+datestamp = 1358862131
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[variable][] = admin_menu_cache_client
@@ -17,19 +18,18 @@ features[variable][] = admin_menu_position_fixed
 features[variable][] = admin_menu_tweak_modules
 features[variable][] = admin_menu_tweak_permissions
 features[variable][] = admin_menu_tweak_tabs
+features[variable][] = admin_theme
 features[variable][] = date_api_version
 features[variable][] = diff_context_lines_leading
 features[variable][] = diff_context_lines_trailing
 features[variable][] = diff_default_state_node
 features[variable][] = diff_radio_behavior
 features[variable][] = diff_theme
-features[variable][] = entitycache_enabled
 features[variable][] = language_negotiation_language
 features[variable][] = language_negotiation_language_content
 features[variable][] = language_negotiation_language_url
 features[variable][] = language_types
 features[variable][] = menu_expanded
+features[variable][] = node_admin_theme
 features[variable][] = path_alias_whitelist
-
-
-
+features[variable][] = theme_default

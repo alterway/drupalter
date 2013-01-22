@@ -10,6 +10,7 @@ dependencies[] = field_sql_storage
 dependencies[] = node
 dependencies[] = strongarm
 dependencies[] = text
+dependencies[] = drupalter_core
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[field][] = node-simple_page-body
@@ -26,4 +27,11 @@ features[variable][] = node_submitted_simple_page
 version = "develop-dev"
 project = "drupalter"
 datestamp = "1358172322"
+
+
+
+; Information added by drush on 2013-01-22
+version = "develop-dev"
+project = "drupalter"
+datestamp = "1358862131"
 

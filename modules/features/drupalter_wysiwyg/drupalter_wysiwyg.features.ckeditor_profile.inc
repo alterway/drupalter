@@ -34,8 +34,10 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
         'uicolor' => 'default',
         'uicolor_user' => '#D3D3D3',
         'toolbar' => '[
-    [\'Bold\',\'Italic\',\'Link\',\'Unlink\',\'SpecialChar\',\'DrupalBreak\',\'PasteText\',\'PasteFromWord\'],
-    [\'NumberedList\',\'BulletedList\',\'Outdent\',\'Indent\',\'Blockquote\',\'RemoveFormat\',\'SelectAll\']
+    [\'Bold\',\'Italic\',\'Link\',\'Unlink\',\'NumberedList\',\'BulletedList\',\'Outdent\',\'Indent\'],
+    [\'SpecialChar\',\'DrupalBreak\',\'PasteText\',\'PasteFromWord\',\'Blockquote\'],
+    [\'asset_image\',\'assetSearch\'],
+    [\'RemoveFormat\',\'SelectAll\']
 ]',
         'expand' => 't',
         'width' => '100%',
@@ -73,6 +75,21 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
         'theme_config_js' => 'f',
         'js_conf' => '',
         'loadPlugins' => array(
+          'asset' => array(
+            'name' => 'asset',
+            'desc' => 'Media assets',
+            'path' => '%base_path%profiles/drupalter/modules/contrib/asset/ckeditor/',
+            'buttons' => array(
+              'asset_image' => array(
+                'label' => 'Asset: Image',
+                'icon' => 'buttons/AddImage.png',
+              ),
+              'assetSearch' => array(
+                'label' => 'Assets library',
+                'icon' => 'search.png',
+              ),
+            ),
+          ),
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
             'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
