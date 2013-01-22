@@ -12,8 +12,8 @@ projects[date][subdir] = contrib
 projects[link][subdir] = contrib
 projects[jquery_update][subdir] = contrib
 projects[views][subdir] = contrib
-projects[entityreference] = contrib
-projects[references_dialog] = contrib
+projects[entityreference][subdir] = contrib
+projects[references_dialog][subdir] = contrib
 
 ; WYSIWYG
 projects[ckeditor][subdir] = contrib
