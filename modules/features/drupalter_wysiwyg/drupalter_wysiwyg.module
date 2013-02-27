@@ -1,6 +1,8 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Drupalter Wysiwyg feature.
  */
+
+include_once 'drupalter_wysiwyg.features.inc';
 
