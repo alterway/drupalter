@@ -49,6 +49,15 @@ function drupalter_media_user_default_permissions() {
     'module' => 'asset',
   );
 
+  // Exported permission: create asset with type fichier.
+  $permissions['create asset with type fichier'] = array(
+    'name' => 'create asset with type fichier',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'asset',
+  );
+
   // Exported permission: create asset with type image.
   $permissions['create asset with type image'] = array(
     'name' => 'create asset with type image',
@@ -79,6 +88,15 @@ function drupalter_media_user_default_permissions() {
     'module' => 'asset',
   );
 
+  // Exported permission: delete asset with type fichier.
+  $permissions['delete asset with type fichier'] = array(
+    'name' => 'delete asset with type fichier',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'asset',
+  );
+
   // Exported permission: delete asset with type image.
   $permissions['delete asset with type image'] = array(
     'name' => 'delete asset with type image',
@@ -104,6 +122,15 @@ function drupalter_media_user_default_permissions() {
     'name' => 'edit asset with type audio',
     'roles' => array(
       'Contributeur' => 'Contributeur',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'asset',
+  );
+
+  // Exported permission: edit asset with type fichier.
+  $permissions['edit asset with type fichier'] = array(
+    'name' => 'edit asset with type fichier',
+    'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'asset',

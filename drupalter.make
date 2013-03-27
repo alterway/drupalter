@@ -2,8 +2,8 @@ core = 7.x
 api = 2
 
 ; Base Themes
-projects[] = tao
-projects[] = rubik
+projects[tao][subdir] = contrib
+projects[rubik][subdir] = contrib
 
 ; Base modules
 projects[ctools][subdir] = contrib
