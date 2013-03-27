@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Drupalter Media feature.
+ * Code for the drupalter Media feature.
  */
 
 include_once 'drupalter_media.features.inc';

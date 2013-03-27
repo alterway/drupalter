@@ -1,1 +1,3 @@
-build-drupalter-local.make
+modules/contrib/*
+themes/contrib/*
+libraries/*

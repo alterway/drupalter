@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Drupalter Wysiwyg feature.
+ * Code for the drupalter Wysiwyg feature.
  */
 
 include_once 'drupalter_wysiwyg.features.inc';

@@ -35,8 +35,8 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
         'uicolor_user' => '#D3D3D3',
         'toolbar' => '[
     [\'Bold\',\'Italic\',\'Link\',\'Unlink\',\'NumberedList\',\'BulletedList\',\'Outdent\',\'Indent\'],
-    [\'SpecialChar\',\'DrupalBreak\',\'PasteText\',\'PasteFromWord\',\'Blockquote\'],
-    [\'asset_image\',\'assetSearch\'],
+    [\'SpecialChar\',\'PasteText\',\'PasteFromWord\',\'Blockquote\'],
+    [\'asset_image\',\'asset_audio\',\'asset_video\',\'asset_fichier\',\'assetSearch\'],
     [\'RemoveFormat\',\'SelectAll\']
 ]',
         'expand' => 't',
@@ -44,7 +44,7 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
         'lang' => 'en',
         'auto_lang' => 't',
         'language_direction' => 'default',
-        'enter_mode' => 'p',
+        'enter_mode' => 'br',
         'shift_enter_mode' => 'br',
         'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
         'custom_formatting' => 'f',
@@ -80,9 +80,21 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
             'desc' => 'Media assets',
             'path' => '%base_path%profiles/drupalter/modules/contrib/asset/ckeditor/',
             'buttons' => array(
+              'asset_audio' => array(
+                'label' => 'Asset: Audio',
+                'icon' => 'buttons/AddSound.png',
+              ),
               'asset_image' => array(
                 'label' => 'Asset: Image',
                 'icon' => 'buttons/AddImage.png',
+              ),
+              'asset_video' => array(
+                'label' => 'Asset: Video',
+                'icon' => 'buttons/AddVideo.png',
+              ),
+              'asset_fichier' => array(
+                'label' => 'Asset: Fichier',
+                'icon' => 'buttons/AddDocument.png',
               ),
               'assetSearch' => array(
                 'label' => 'Assets library',

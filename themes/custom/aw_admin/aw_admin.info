@@ -1,0 +1,6 @@
+name = AW Admin
+description = AW admin theme.
+base theme = rubik
+core = 7.x
+engine = phptemplate
+version = "7.x-1.0-dev"

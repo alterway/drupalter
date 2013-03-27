@@ -6,7 +6,7 @@
 
 function drupalter_wysiwyg_install() {
   // Remove the default CkEditor profiles
-  include drupal_get_path('module', 'ckeditor') . '/includes/ckeditor.admin.inc';
+  module_load_include('inc', 'ckeditor', 'includes/ckeditor.admin');
 
   foreach (array('Advanced', 'Full') as $profile) {
     ckeditor_profile_delete($profile);
