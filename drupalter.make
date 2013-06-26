@@ -43,7 +43,7 @@ libraries[ckeditor][destination] = "modules/contrib/ckeditor"
 projects[asset][subdir] = contrib
 projects[jplayer][subdir] = contrib
 libraries[jplayer][download][type] = get
-libraries[jplayer][download][url] = http://www.jplayer.org/latest/jQuery.jPlayer.2.2.0.zip
+libraries[jplayer][download][url] = http://www.jplayer.org/latest/jQuery.jPlayer.2.4.0.zip
 libraries[jplayer][download][directory_name] = jplayer
 
 
