@@ -525,6 +525,27 @@ function drupalter_core_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_date_format';
+  $strongarm->value = 'Y-m-d H:i:s';
+  $export['scheduler_date_format'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_extra_info';
+  $strongarm->value = '';
+  $export['scheduler_extra_info'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_field_type';
+  $strongarm->value = 'date_popup';
+  $export['scheduler_field_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'site_default_country';
   $strongarm->value = 'FR';
   $export['site_default_country'] = $strongarm;
@@ -549,15 +570,6 @@ function drupalter_core_strongarm() {
   $strongarm->name = 'transliteration_file_uploads';
   $strongarm->value = 1;
   $export['transliteration_file_uploads'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'views_block_hashes';
-  $strongarm->value = array(
-    'ed43f6fa8ffb4955d6da82cb5f9d3c1a' => 'asset_references-derniers_medias',
-  );
-  $export['views_block_hashes'] = $strongarm;
 
   return $export;
 }

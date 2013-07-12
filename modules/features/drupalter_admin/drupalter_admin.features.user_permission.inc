@@ -68,16 +68,6 @@ function drupalter_admin_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: access dashboard.
-  $permissions['access dashboard'] = array(
-    'name' => 'access dashboard',
-    'roles' => array(
-      'Contributeur' => 'Contributeur',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'dashboard',
-  );
-
   // Exported permission: access site in maintenance mode.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',

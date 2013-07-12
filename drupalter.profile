@@ -24,6 +24,12 @@ function drupalter_install_tasks($install_state) {
     'type' => 'normal',
   );
 
+  $tasks['drupalter_rebuild_permissions'] = array(
+    'display_name' => st('Rebuild permissions'),
+    'display' => TRUE,
+    'type' => 'normal',
+  );
+
   $tasks['drupalter_configuration_finish'] = array(
     'display_name' => st('Finish Drupalter configuration'),
     'display' => TRUE,
@@ -48,12 +54,17 @@ function drupalter_install_tasks_alter(&$tasks, $install_state) {
 function drupalter_revert_features() {
 
   /*
-   * This will revert overriden components of all enabled features.
+   * This will revert overridden components of all enabled features.
    *
    * For some reason(s) (probably the order in which the modules are enabled, among others),
-   * some feature components stay overriden after the feature has been activated.
+   * some feature components stay overridden after the feature has been activated.
    */
   features_revert();
+}
+
+
+function drupalter_rebuild_permissions() {
+  node_access_rebuild();
 }
 
 
@@ -85,32 +96,9 @@ function drupalter_import_translations(&$install_state) {
 function drupalter_configuration_finish(&$install_state) {
 
   /*
-   * Dashboard
-   *
-   * Put node_recent and media block in dashboard for the admin theme.
-   */
-  $admin_theme = variable_get('admin_theme', 'aw_admin');
-  $query = db_update('block')
-    ->fields(array('region' => 'dashboard_main', 'status' => 1));
-  $query->condition('theme', $admin_theme)
-    ->condition('module', 'node')
-    ->condition('delta', "recent");
-  $query->execute();
-
-  if ($hash = array_search('asset_references-derniers_medias', variable_get('views_block_hashes', array()))) {
-    $query = db_update('block')
-      ->fields(array('region' => 'dashboard_sidebar', 'status' => 1));
-    $query->condition('theme', $admin_theme)
-      ->condition('module', 'views')
-      ->condition('delta', $hash);
-    $query->execute();
-  }
-
-
-  /*
    * Login Destination
    *
-   * Every connected user is redirected to the dashboard on login.
+   * Every connected user is redirected to their workbench on login.
    */
   $roles = array();
   foreach (user_roles() as $rid => $name) {
@@ -122,12 +110,39 @@ function drupalter_configuration_finish(&$install_state) {
 
   $login_destination_rule = array(
     'destination_type' => 0,
-    'destination' => "admin/dashboard",
+    'destination' => "admin/workbench",
     'triggers' => serialize(array('login' => 'login')),
     'pages_type' => 0,
     'roles' => serialize($roles),
     'weight' => 0,
     'pages' => "",
   );
+
   drupal_write_record('login_destination', $login_destination_rule);
+
+  /**
+   * Remove the default CkEditor profiles
+   **/
+  if (!function_exists('ckeditor_profile_delete')) {
+    module_load_include('inc', 'ckeditor', 'includes/ckeditor.admin');
+  }
+
+  foreach (array('Advanced', 'Full') as $profile) {
+    ckeditor_profile_delete($profile);
+  }
+}
+
+
+/**
+ * Add media block to workbench main page.
+ *
+ * Implements hook_workbench_content_alter().
+ */
+function nvx7_workbench_content_alter(&$output) {
+/*  $output['nvx7_recent_media'] = array(
+    '#view' => 'recent_media',
+    '#view_display' => 'workbench_media_block',
+    '#attributes' => array('class' => array('clearfix'), 'style' => array('clear: both;')),
+    '#theme' => 'workbench_element',
+  );*/
 }

@@ -10,6 +10,25 @@
 function drupalter_admin_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: management:admin/workbench
+  $menu_links['management:admin/workbench'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/workbench',
+    'router_path' => 'admin/workbench',
+    'link_title' => 'My Workbench',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'My Workbench area',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -20,
+    'parent_path' => 'admin',
+  );
   // Exported menu link: menu-administration:admin/content
   $menu_links['menu-administration:admin/content'] = array(
     'menu_name' => 'menu-administration',
@@ -22,11 +41,11 @@ function drupalter_admin_menu_default_menu_links() {
       ),
     ),
     'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
   );
   // Exported menu link: menu-administration:admin/content/assets
   $menu_links['menu-administration:admin/content/assets'] = array(
@@ -40,34 +59,16 @@ function drupalter_admin_menu_default_menu_links() {
       ),
     ),
     'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '0',
-  );
-  // Exported menu link: menu-administration:admin/dashboard
-  $menu_links['menu-administration:admin/dashboard'] = array(
-    'menu_name' => 'menu-administration',
-    'link_path' => 'admin/dashboard',
-    'router_path' => 'admin/dashboard',
-    'link_title' => 'Tableau de bord',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('My Workbench');
   t('Médiathèque');
-  t('Tableau de bord');
   t('Trouver un contenu');
 
 

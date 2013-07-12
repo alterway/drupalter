@@ -12,8 +12,8 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
     'CKEditor Global Profile' => array(
       'name' => 'CKEditor Global Profile',
       'settings' => array(
-        'skin' => 'kama',
-        'ckeditor_path' => '%m/ckeditor',
+        'skin' => 'moono',
+        'ckeditor_path' => '%l/ckeditor',
         'ckeditor_local_path' => '',
         'ckeditor_plugins_path' => '%m/plugins',
         'ckeditor_plugins_local_path' => '',
@@ -28,9 +28,9 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
     'wysiwyg' => array(
       'name' => 'wysiwyg',
       'settings' => array(
-        'ss' => '2',
+        'ss' => 2,
         'default' => 't',
-        'show_toggle' => 'f',
+        'show_toggle' => 't',
         'uicolor' => 'default',
         'uicolor_user' => '#D3D3D3',
         'toolbar' => '[
@@ -46,7 +46,7 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
         'language_direction' => 'default',
         'enter_mode' => 'br',
         'shift_enter_mode' => 'br',
-        'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
+        'font_format' => 'p;div',
         'custom_formatting' => 'f',
         'formatting' => array(
           'custom_formatting_options' => array(
@@ -67,9 +67,7 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
         'UserFilesAbsolutePath' => '%d%b%f/',
-        'ckeditor_load_method' => 'ckeditor.js',
-        'ckeditor_load_time_out' => '0',
-        'forcePasteAsPlainText' => 'f',
+        'forcePasteAsPlainText' => 't',
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
@@ -101,18 +99,6 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
                 'icon' => 'search.png',
               ),
             ),
-          ),
-          'drupalbreaks' => array(
-            'name' => 'drupalbreaks',
-            'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
-            'path' => '%plugin_dir%drupalbreaks/',
-            'buttons' => array(
-              'DrupalBreak' => array(
-                'label' => 'DrupalBreak',
-                'icon' => 'images/drupalbreak.png',
-              ),
-            ),
-            'default' => 't',
           ),
         ),
       ),
