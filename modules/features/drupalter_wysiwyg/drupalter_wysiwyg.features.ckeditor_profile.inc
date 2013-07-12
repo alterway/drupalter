@@ -30,11 +30,11 @@ function drupalter_wysiwyg_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'default' => 't',
-        'show_toggle' => 't',
+        'show_toggle' => 'f',
         'uicolor' => 'default',
         'uicolor_user' => '#D3D3D3',
         'toolbar' => '[
-    [\'Bold\',\'Italic\',\'Link\',\'Unlink\',\'NumberedList\',\'BulletedList\',\'Outdent\',\'Indent\'],
+    [\'Bold\',\'Italic\',\'NumberedList\',\'BulletedList\',\'Link\',\'Unlink\',\'Outdent\',\'Indent\'],
     [\'SpecialChar\',\'PasteText\',\'PasteFromWord\',\'Blockquote\'],
     [\'asset_image\',\'asset_audio\',\'asset_video\',\'asset_fichier\',\'assetSearch\'],
     [\'RemoveFormat\',\'SelectAll\']
