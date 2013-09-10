@@ -130,9 +130,9 @@ projects[xmlsitemap][subdir] = contrib
 projects[xmlsitemap][version] = "2.0-rc2"
 
 projects[metatag][subdir] = contrib
-projects[metatag][version] = "7.x-1.0-beta7"
+projects[metatag][version] = "1.0-beta7"
 
 projects[globalredirect][subdir] = contrib
-projects[globalredirect][version] = "7.x-1.5"
+projects[globalredirect][version] = "1.5"
 
 
