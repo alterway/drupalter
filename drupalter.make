@@ -30,7 +30,7 @@ projects[token][subdir] = contrib
 projects[token][version] = "1.5"
 
 projects[entity][subdir] = contrib
-projects[entity][version] = "1.1"
+projects[entity][version] = "1.2"
 ; entity_metadata_no_hook_node_access() should respect that the $node parameter can be a string or an object: http://drupal.org/node/1780646
 ; Last checked: 2013/07/12
 projects[entity][patch][] = https://drupal.org/files/entity_node_access-1780646-179.patch
