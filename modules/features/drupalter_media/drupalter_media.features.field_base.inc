@@ -246,11 +246,11 @@ function drupalter_media_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_image_principale',
     'foreign keys' => array(
-      'node' => array(
+      'asset' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'aid',
         ),
-        'table' => 'node',
+        'table' => 'asset',
       ),
     ),
     'indexes' => array(

@@ -43,6 +43,8 @@ dependencies[] = references_dialog
 dependencies[] = transliteration
 dependencies[] = pathauto
 dependencies[] = redirect
+dependencies[] = metatags
+dependencies[] = globalredirect
 dependencies[] = l10n_update
 
 ; Features
