@@ -130,6 +130,9 @@ function drupalter_configuration_finish(&$install_state) {
   foreach (array('Advanced', 'Full') as $profile) {
     ckeditor_profile_delete($profile);
   }
+
+  variable_set('site_name', 'DrupAlter');
+  variable_set('site_slogan', 'Distribution Drupal Alter Way');
 }
 
 

@@ -19,9 +19,6 @@ function drupalter_install() {
   // Default country : France
   variable_set('site_default_country', 'FR');
 
-  variable_set('site_name', 'DrupAlter');
-  variable_set('site_slogan', 'Distribution Drupal Alter Way');
-
   // Allow visitor account creation, but with administrative approval.
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
 
