@@ -43,7 +43,9 @@ dependencies[] = references_dialog
 dependencies[] = transliteration
 dependencies[] = pathauto
 dependencies[] = redirect
-dependencies[] = metatags
+dependencies[] = metatag
+dependencies[] = metatag_ui
+dependencies[] = metatag_opengraph
 dependencies[] = globalredirect
 dependencies[] = l10n_update
 
@@ -52,6 +54,7 @@ dependencies[] = drupalter_core
 dependencies[] = drupalter_media
 dependencies[] = drupalter_wysiwyg
 dependencies[] = drupalter_page
+dependencies[] = drupalter_seo
 dependencies[] = drupalter_admin
 
 
