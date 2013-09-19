@@ -43,7 +43,6 @@ features[features_api][] = api:2
 features[menu_custom][] = management
 features[menu_custom][] = menu-administration
 features[menu_links][] = management:admin/workbench
-features[menu_links][] = menu-administration:admin/content
 features[menu_links][] = menu-administration:admin/content/assets
 features[user_permission][] = access administration menu
 features[user_permission][] = access administration pages

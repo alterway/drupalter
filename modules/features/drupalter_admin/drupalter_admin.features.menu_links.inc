@@ -29,30 +29,12 @@ function drupalter_admin_menu_default_menu_links() {
     'weight' => -20,
     'parent_path' => 'admin',
   );
-  // Exported menu link: menu-administration:admin/content
-  $menu_links['menu-administration:admin/content'] = array(
-    'menu_name' => 'menu-administration',
-    'link_path' => 'admin/content',
-    'router_path' => 'admin/content',
-    'link_title' => 'Trouver un contenu',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-  );
   // Exported menu link: menu-administration:admin/content/assets
   $menu_links['menu-administration:admin/content/assets'] = array(
     'menu_name' => 'menu-administration',
     'link_path' => 'admin/content/assets',
     'router_path' => 'admin/content/assets',
-    'link_title' => 'Médiathèque',
+    'link_title' => 'Medias',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -67,9 +49,8 @@ function drupalter_admin_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Medias');
   t('My Workbench');
-  t('Médiathèque');
-  t('Trouver un contenu');
 
 
   return $menu_links;
