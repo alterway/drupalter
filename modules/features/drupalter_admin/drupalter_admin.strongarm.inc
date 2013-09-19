@@ -111,13 +111,6 @@ function drupalter_admin_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'configurable_timezones';
-  $strongarm->value = 0;
-  $export['configurable_timezones'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'contact_threshold_limit';
   $strongarm->value = '5';
   $export['contact_threshold_limit'] = $strongarm;
@@ -128,27 +121,6 @@ function drupalter_admin_strongarm() {
   $strongarm->name = 'contact_threshold_window';
   $strongarm->value = '3600';
   $export['contact_threshold_window'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_api_use_iso8601';
-  $strongarm->value = 0;
-  $export['date_api_use_iso8601'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_first_day';
-  $strongarm->value = '0';
-  $export['date_first_day'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'empty_timezone_message';
-  $strongarm->value = 0;
-  $export['empty_timezone_message'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -223,13 +195,6 @@ Please go to !edit_uri to change your password.';
   $strongarm->name = 'user_cancel_method';
   $strongarm->value = 'user_cancel_block';
   $export['user_cancel_method'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_default_timezone';
-  $strongarm->value = '0';
-  $export['user_default_timezone'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

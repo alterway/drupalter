@@ -14,13 +14,13 @@ function drupalter_wysiwyg_filter_default_formats() {
   $formats['wysiwyg'] = array(
     'format' => 'wysiwyg',
     'name' => 'Wysiwyg',
-    'cache' => '0',
-    'status' => '1',
-    'weight' => '0',
+    'cache' => 0,
+    'status' => 1,
+    'weight' => 0,
     'filters' => array(
       'filter_html' => array(
-        'weight' => '-49',
-        'status' => '1',
+        'weight' => -49,
+        'status' => 1,
         'settings' => array(
           'allowed_html' => '<p> <br> <a> <em> <strong> <blockquote> <code> <ul> <ol> <li>',
           'filter_html_help' => 0,
@@ -28,13 +28,13 @@ function drupalter_wysiwyg_filter_default_formats() {
         ),
       ),
       'assets_filter' => array(
-        'weight' => '-46',
-        'status' => '1',
+        'weight' => -46,
+        'status' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => '-44',
-        'status' => '1',
+        'weight' => -44,
+        'status' => 1,
         'settings' => array(),
       ),
     ),

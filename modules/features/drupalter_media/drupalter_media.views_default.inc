@@ -51,27 +51,27 @@ function drupalter_media_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'asset';
   $handler->display->display_options['row_options']['view_mode'] = 'tooltip';
   $handler->display->display_options['row_options']['asset_library'] = 1;
-  /* Relation: Media Asset : Auteur */
+  /* Relationship: Media Asset: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'asset';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   $handler->display->display_options['relationships']['uid']['label'] = 'Auteur';
   $handler->display->display_options['relationships']['uid']['required'] = TRUE;
-  /* Champ: Media Asset : Aid */
+  /* Field: Media Asset: Aid */
   $handler->display->display_options['fields']['aid']['id'] = 'aid';
   $handler->display->display_options['fields']['aid']['table'] = 'asset';
   $handler->display->display_options['fields']['aid']['field'] = 'aid';
   $handler->display->display_options['fields']['aid']['label'] = '';
   $handler->display->display_options['fields']['aid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['aid']['element_label_colon'] = FALSE;
-  /* Champ: Title */
+  /* Field: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'asset';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['ui_name'] = 'Title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['asset_tooltip'] = 'tooltip';
-  /* Critère de tri: Media Asset : Date de création */
+  /* Sort criterion: Media Asset: Date created */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'asset';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -107,14 +107,14 @@ function drupalter_media_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Media Asset : Aid */
+  /* Field: Media Asset: Aid */
   $handler->display->display_options['fields']['aid']['id'] = 'aid';
   $handler->display->display_options['fields']['aid']['table'] = 'asset';
   $handler->display->display_options['fields']['aid']['field'] = 'aid';
   $handler->display->display_options['fields']['aid']['label'] = '';
   $handler->display->display_options['fields']['aid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['aid']['element_label_colon'] = FALSE;
-  /* Champ: Media Asset : Image */
+  /* Field: Media Asset: Image */
   $handler->display->display_options['fields']['field_asset_image']['id'] = 'field_asset_image';
   $handler->display->display_options['fields']['field_asset_image']['table'] = 'field_data_field_asset_image';
   $handler->display->display_options['fields']['field_asset_image']['field'] = 'field_asset_image';
@@ -124,7 +124,7 @@ function drupalter_media_views_default_views() {
     'image_style' => 'thumbnail',
     'image_link' => '',
   );
-  /* Champ: Title */
+  /* Field: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'asset';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -132,7 +132,7 @@ function drupalter_media_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['asset_tooltip'] = 'tooltip';
   $handler->display->display_options['fields']['title']['link_to_asset'] = FALSE;
-  /* Champ: Media Asset : Insert button */
+  /* Field: Media Asset: Insert button */
   $handler->display->display_options['fields']['insert_asset']['id'] = 'insert_asset';
   $handler->display->display_options['fields']['insert_asset']['table'] = 'asset';
   $handler->display->display_options['fields']['insert_asset']['field'] = 'insert_asset';
@@ -140,7 +140,7 @@ function drupalter_media_views_default_views() {
   $handler->display->display_options['fields']['insert_asset']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Critère de filtrage: Media Asset : Asset type */
+  /* Filter criterion: Media Asset: Asset type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'asset';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -154,73 +154,6 @@ function drupalter_media_views_default_views() {
   $handler->display->display_options['attach'] = array(
     0 => 'node:field_image_principale:simple_page',
   );
-
-  /* Display: Derniers médias ajoutés */
-  $handler = $view->new_display('block', 'Derniers médias ajoutés', 'derniers_medias');
-  $handler->display->display_options['display_description'] = 'Lister les derniers médias ajoutés sur le tableau de bord';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Media Asset : Aid */
-  $handler->display->display_options['fields']['aid']['id'] = 'aid';
-  $handler->display->display_options['fields']['aid']['table'] = 'asset';
-  $handler->display->display_options['fields']['aid']['field'] = 'aid';
-  $handler->display->display_options['fields']['aid']['label'] = '';
-  $handler->display->display_options['fields']['aid']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['aid']['element_label_colon'] = FALSE;
-  /* Champ: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'asset';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['ui_name'] = 'Title';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['asset_tooltip'] = 'tooltip';
-  /* Champ: Utilisateur : Type d'entité Utilisateur rendu */
-  $handler->display->display_options['fields']['rendered_entity']['id'] = 'rendered_entity';
-  $handler->display->display_options['fields']['rendered_entity']['table'] = 'views_entity_user';
-  $handler->display->display_options['fields']['rendered_entity']['field'] = 'rendered_entity';
-  $handler->display->display_options['fields']['rendered_entity']['relationship'] = 'uid';
-  $handler->display->display_options['fields']['rendered_entity']['label'] = 'Auteur';
-  $handler->display->display_options['fields']['rendered_entity']['link_to_entity'] = 1;
-  $handler->display->display_options['fields']['rendered_entity']['view_mode'] = 'full';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Critère de filtrage: Media Asset : Asset type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'asset';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Media type';
-  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
-  $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    4 => 0,
-    3 => 0,
-  );
-  /* Critère de filtrage: Media Asset : Titre */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'asset';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Titre';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
-  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    4 => 0,
-    3 => 0,
-  );
-  $handler->display->display_options['block_description'] = 'Derniers médias ajoutés';
   $translatables['asset_references'] = array(
     t('Master'),
     t('Media assets library'),
@@ -237,14 +170,11 @@ function drupalter_media_views_default_views() {
     t('suivant ›'),
     t('dernier »'),
     t('Auteur'),
-    t('Titre'),
+    t('Title'),
     t('refdialog Image Principale'),
-    t('plus'),
+    t('more'),
     t('Image'),
     t('Type'),
-    t('Derniers médias ajoutés'),
-    t('Lister les derniers médias ajoutés sur le tableau de bord'),
-    t('Media type'),
   );
   $export['asset_references'] = $view;
 

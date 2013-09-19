@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * drupalter_core.features.inc
+ * drupalter_seo.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function drupalter_core_ctools_plugin_api($module = NULL, $api = NULL) {
+function drupalter_seo_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }

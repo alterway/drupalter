@@ -28,15 +28,5 @@ function drupalter_wysiwyg_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
-  // Exported permission: use text format wysiwyg.
-  $permissions['use text format wysiwyg'] = array(
-    'name' => 'use text format wysiwyg',
-    'roles' => array(
-      'Contributeur' => 'Contributeur',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'filter',
-  );
-
   return $permissions;
 }
