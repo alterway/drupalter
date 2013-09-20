@@ -286,6 +286,15 @@ function drupalter_admin_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: 'administer string overrides'.
+  $permissions['administer string overrides'] = array(
+    'name' => 'administer string overrides',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'stringoverrides',
+  );
+
   // Exported permission: 'administer taxonomy'.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
@@ -338,6 +347,15 @@ function drupalter_admin_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'workbench',
+  );
+
+  // Exported permission: 'administer xmlsitemap'.
+  $permissions['administer xmlsitemap'] = array(
+    'name' => 'administer xmlsitemap',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'xmlsitemap',
   );
 
   // Exported permission: 'block IP addresses'.
@@ -430,6 +448,15 @@ function drupalter_admin_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'password_policy',
+  );
+
+  // Exported permission: 'generate features'.
+  $permissions['generate features'] = array(
+    'name' => 'generate features',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'features',
   );
 
   // Exported permission: 'manage features'.

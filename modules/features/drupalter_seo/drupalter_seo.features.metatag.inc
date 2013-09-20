@@ -17,8 +17,38 @@ function drupalter_seo_metatag_export_default() {
       'title' => array(
         'value' => '[current-page:title] | [site:name]',
       ),
+      'description' => array(
+        'value' => '',
+      ),
+      'abstract' => array(
+        'value' => '',
+      ),
+      'keywords' => array(
+        'value' => '',
+      ),
+      'robots' => array(
+        'value' => array(
+          'index' => 0,
+          'follow' => 0,
+          'noindex' => 0,
+          'nofollow' => 0,
+          'noarchive' => 0,
+          'nosnippet' => 0,
+          'noodp' => 0,
+          'noydir' => 0,
+        ),
+      ),
+      'news_keywords' => array(
+        'value' => '',
+      ),
       'generator' => array(
         'value' => 'Drupal 7 (http://drupal.org)',
+      ),
+      'copyright' => array(
+        'value' => '',
+      ),
+      'image_src' => array(
+        'value' => '',
       ),
       'canonical' => array(
         'value' => '[current-page:url:absolute]',
@@ -26,17 +56,83 @@ function drupalter_seo_metatag_export_default() {
       'shortlink' => array(
         'value' => '[current-page:url:unaliased]',
       ),
-      'og:type' => array(
-        'value' => 'article',
+      'publisher' => array(
+        'value' => '',
       ),
-      'og:title' => array(
-        'value' => '[current-page:title]',
+      'author' => array(
+        'value' => '',
+      ),
+      'original-source' => array(
+        'value' => '',
+      ),
+      'fb:admins' => array(
+        'value' => '',
+      ),
+      'fb:app_id' => array(
+        'value' => '',
       ),
       'og:site_name' => array(
         'value' => '[site:name]',
       ),
+      'og:title' => array(
+        'value' => '[current-page:title]',
+      ),
+      'og:description' => array(
+        'value' => '',
+      ),
+      'og:type' => array(
+        'value' => 'article',
+      ),
+      'og:image' => array(
+        'value' => '',
+      ),
       'og:url' => array(
         'value' => '[current-page:url:absolute]',
+      ),
+      'og:latitude' => array(
+        'value' => '',
+      ),
+      'og:longitude' => array(
+        'value' => '',
+      ),
+      'og:street-address' => array(
+        'value' => '',
+      ),
+      'og:locality' => array(
+        'value' => '',
+      ),
+      'og:region' => array(
+        'value' => '',
+      ),
+      'og:postal-code' => array(
+        'value' => '',
+      ),
+      'og:country-name' => array(
+        'value' => '',
+      ),
+      'og:email' => array(
+        'value' => '',
+      ),
+      'og:phone_number' => array(
+        'value' => '',
+      ),
+      'og:fax_number' => array(
+        'value' => '',
+      ),
+      'og:video' => array(
+        'value' => '',
+      ),
+      'og:video:secure_url' => array(
+        'value' => '',
+      ),
+      'og:video:width' => array(
+        'value' => '',
+      ),
+      'og:video:height' => array(
+        'value' => '',
+      ),
+      'og:video:type' => array(
+        'value' => '',
       ),
     ),
   );
@@ -54,11 +150,11 @@ function drupalter_seo_metatag_export_default() {
       'shortlink' => array(
         'value' => '[site:url]',
       ),
-      'og:type' => array(
-        'value' => 'website',
-      ),
       'og:title' => array(
         'value' => '[site:name]',
+      ),
+      'og:type' => array(
+        'value' => 'website',
       ),
       'og:url' => array(
         'value' => '[site:url]',
