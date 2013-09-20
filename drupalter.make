@@ -70,6 +70,9 @@ projects[l10n_update][patch][] = https://drupal.org/files/l10n_update-1490664-fi
 projects[field_group][subdir] = contrib
 projects[field_group][version] = "1.1"
 
+projects[stringoverrides][subdir] = contrib
+projects[stringoverrides][version] = "1.8"
+
 ; WYSIWYG
 ; ----------------------
 projects[ckeditor][subdir] = contrib
@@ -103,7 +106,7 @@ projects[workbench][subdir] = contrib
 projects[workbench][version] = "1.2"
 
 projects[module_filter][subdir] = contrib
-projects[module_filter][version] = "1.7"
+projects[module_filter][version] = "1.8"
 
 projects[flood_control][subdir] = contrib
 projects[flood_control][version] = "1.0"
@@ -112,7 +115,7 @@ projects[login_destination][subdir] = contrib
 projects[login_destination][version] = "1.1"
 
 projects[password_policy][subdir] = contrib
-projects[password_policy][version] = "1.3"
+projects[password_policy][version] = "1.5"
 
 projects[scheduler][subdir] = contrib
 projects[scheduler][version] = "1.1"
