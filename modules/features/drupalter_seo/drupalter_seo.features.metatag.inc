@@ -142,7 +142,7 @@ function drupalter_seo_metatag_export_default() {
     'instance' => 'global:frontpage',
     'config' => array(
       'title' => array(
-        'value' => '[site:name]',
+        'value' => '[site:name] | [site:slogan]',
       ),
       'canonical' => array(
         'value' => '[site:url]',
