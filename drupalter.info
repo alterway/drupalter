@@ -50,6 +50,7 @@ dependencies[] = metatag_opengraph
 dependencies[] = globalredirect
 dependencies[] = l10n_update
 dependencies[] = stringoverrides
+dependencies[] = security_review
 
 ; Features
 dependencies[] = drupalter_core

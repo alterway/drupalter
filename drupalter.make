@@ -123,6 +123,8 @@ projects[password_policy][version] = "1.5"
 projects[scheduler][subdir] = contrib
 projects[scheduler][version] = "1.1"
 
+projects[security_review][subdir] = contrib
+projects[security_review][version] = "1.1"
 
 ; SEO
 ; ------------------------
