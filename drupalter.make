@@ -26,6 +26,9 @@ projects[strongarm][version] = "2.0"
 projects[features][subdir] = contrib
 projects[features][version] = "2.0-rc3"
 
+projects[features_orphans][subdir] = contrib
+projects[features_orphans][version] = "1.2"
+
 projects[token][subdir] = contrib
 projects[token][version] = "1.5"
 

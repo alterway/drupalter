@@ -26,6 +26,7 @@ dependencies[] = libraries
 dependencies[] = diff
 dependencies[] = strongarm
 dependencies[] = features
+dependencies[] = features_orphans
 dependencies[] = token
 dependencies[] = entity
 dependencies[] = entity_token
