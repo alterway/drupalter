@@ -6,7 +6,7 @@ api = 2
 projects[tao][subdir] = contrib
 projects[tao][version] = "3.0-beta4"
 projects[rubik][subdir] = contrib
-projects[rubik][version] = "4.0-beta8"
+projects[rubik][version] = "4.0-beta9"
 
 
 ; Base modules

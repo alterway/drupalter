@@ -48,18 +48,6 @@ function rf_admin_preprocess_token_tree(&$variables) {
 }
 
 
-function aw_admin_process_page(&$vars) {
-
-  // Process local tasks. Only do this processing if the current theme is
-  // indeed Rubik. Subthemes must re-implement this call.
-  // @see rubik:template.php:rubik_preprocess_page
-  global $theme;
-  if ($theme === 'aw_admin') {
-    _rubik_local_tasks($vars);
-  }
-}
-
-
 /**
  * Preprocessor for theme('node_form').
  *
