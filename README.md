@@ -1,8 +1,8 @@
 # drupalter
 
-Alter Way drupal distribution
-This is a distribution for internal use of Alter Way drupal team
-We always use this distribution for create new project
+Alter Way drupal distribution,
+This is a distribution for internal use of Alter Way drupal team.
+We always use this distribution for create new project.
 
 ## Drupal installation
 
